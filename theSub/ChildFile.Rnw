@@ -1,4 +1,8 @@
-\Sexpr{set_parent('../master.Rnw')}
+<<>>=
+opts_knit$set(root.dir=normalizePath('../'))
+@
+
+\Sexpr{set_parent('master.Rnw')}
 \Sexpr{opts_knit$set(self.contained=FALSE)}
 
 This is the child doc.
@@ -15,13 +19,13 @@ getwd()
 
 data from root
 <<>>=
-d1_child <- read.csv('../data/all_040_in_01.P1.csv')
+d1_child <- read.csv('data/all_040_in_01.P1.csv')
 head(d1_child)
 @
 
 data from child
 <<>>=
-d2_child <- read.csv('data/all_040_in_36.P1.csv')
+d2_child <- read.csv('theSub/data/all_040_in_36.P1.csv')
 head(d2_child)
 @
 
