@@ -26,6 +26,12 @@ d2_master <- read.csv('theSub/data/all_040_in_36.P1.csv')
 head(d2_master)
 @
 
+
+<<master_car_plot>>=
+plot(cars)
+@
+
+
 \newpage
 
 Below here is the child.

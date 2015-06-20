@@ -25,3 +25,7 @@ d2_child <- read.csv('data/all_040_in_36.P1.csv')
 head(d2_child)
 @
 
+<<child_car_plot>>=
+plot(cars)
+@
+
