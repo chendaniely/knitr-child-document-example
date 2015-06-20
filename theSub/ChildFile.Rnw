@@ -1,29 +1,27 @@
-<<set-parent, echo=FALSE, cache=FALSE>>=
-set_parent('../master.Rnw')
-@
+\Sexpr{set_parent('../master.Rnw')}
+\Sexpr{opts_knit$set(self.contained=FALSE)}
+
+This is the child doc.
 
 <<>>=
 print(test_value)
 @
 
-This chunk below is from the child document.
 
-<<test-child, out.width='2in'>>=
-1+1
-rnorm(5)
-plot(1)
-boxplot(1:10)
-str(mtcars)
+The working directory for the child is
+<<child-wd>>=
+getwd()
 @
 
+data from root
 <<>>=
-d1_child <- read.csv('data/all_040_in_01.P1.csv')
+d1_child <- read.csv('../data/all_040_in_01.P1.csv')
 head(d1_child)
 @
 
+data from child
 <<>>=
-d2_master <- read.csv('theSub/data/all_040_in_36.P1.csv')
-head(d2_master)
+d2_child <- read.csv('data/all_040_in_36.P1.csv')
+head(d2_child)
 @
-
 

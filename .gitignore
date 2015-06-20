@@ -1,3 +1,35 @@
 .Rproj.user
 .Rhistory
 .RData
+
+# knitr-latex
+*concordance.tex
+master.tex
+theSub/ChildFile.tex
+theSub/knitr.sty
+
+# latex
+*.aux
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.synctex.gz
+*.pdf

@@ -1,32 +1,37 @@
 \documentclass{article}
+
 \begin{document}
+
+This is the master doc.
 
 <<>>=
 print(test_value)
 @
 
 
-<<test-main>>=
-options(width = 60)
-summary(iris)
+The working directory for the master is
+<<master-wd>>=
+getwd()
 @
 
-Let's see how to work with child documents in knitr. Below we input
-the file \textsf{theSub/ChildFile.Rnw}:
-
-\Sexpr{knit_child('theSub/ChildFile.Rnw')}
-
+reading in data from root rolder
 <<>>=
 d1_master <- read.csv('data/all_040_in_01.P1.csv')
 head(d1_master)
 @
 
+read in data from a child
 <<>>=
 d2_master <- read.csv('theSub/data/all_040_in_36.P1.csv')
 head(d2_master)
 @
 
+\newpage
 
-Done!
+Below here is the child.
 
+<<Child-doc,child="theSub/ChildFile.Rnw">>=
+@
+
+Finished child, ending master.
 \end{document}
