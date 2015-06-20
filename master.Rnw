@@ -16,6 +16,17 @@ the file \textsf{theSub/ChildFile.Rnw}:
 
 \Sexpr{knit_child('theSub/ChildFile.Rnw')}
 
+<<>>=
+d1_master <- read.csv('data/all_040_in_01.P1.csv')
+head(d1_master)
+@
+
+<<>>=
+d2_master <- read.csv('theSub/data/all_040_in_36.P1.csv')
+head(d2_master)
+@
+
+
 Done!
 
 \end{document}

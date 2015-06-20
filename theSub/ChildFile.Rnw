@@ -15,3 +15,15 @@ plot(1)
 boxplot(1:10)
 str(mtcars)
 @
+
+<<>>=
+d1_child <- read.csv('data/all_040_in_01.P1.csv')
+head(d1_child)
+@
+
+<<>>=
+d2_master <- read.csv('theSub/data/all_040_in_36.P1.csv')
+head(d2_master)
+@
+
+
